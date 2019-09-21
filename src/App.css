@@ -20,3 +20,43 @@
 .App-link {
   color: #09d3ac;
 }
+
+.tags-input{
+  border: 1px solid #333;
+  display: inline-block;
+}
+
+.tags-input .tags{
+  font-size: 85%;
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0.1em;
+  display: inline-block;
+  background-color: #ddd;
+  margin-left: 2px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.tags-input .tags:hover{
+  background-color: #3af;
+  color: white;
+}
+
+.tags-input .tags .close::after{
+  content: 'x';
+  font-weight: bold;
+  font-size: 0.75em;
+  display: inline-block;
+  transform: scale(1.4);
+  margin-left: 0.75em;
+}
+
+.tags-input .tags .close:hover::after{
+  color: red;
+}
+
+.tags-input .main-tag{
+  border: 0;
+  outline: 0;
+  padding: 0.5em 0.1em;
+}
